@@ -1,0 +1,16 @@
+📂 seu-projeto/
+├── 📂 config/
+│   └── database.js      # Conexão com o MySQL
+├── 📂 middlewares/
+│   └── upload.js        # Configuração do Multer (Armazenamento físico)
+├── 📂 controllers/
+│   └── documentoController.js # Lógica de negócio (Regras da API)
+├── 📂 routes/
+│   └── documentoRoutes.js     # Definição das rotas da API
+├── 📂 public/
+│   └── index.html       # Interface visual (Front-end)
+├── 📂 uploads/          # Onde os PDFs físicos ficam salvos
+├── .env                 # Variáveis de ambiente
+├── package.json         # Dependências do projeto
+└── server.js            # Inicialização do servidor Express
+

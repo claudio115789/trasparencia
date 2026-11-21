@@ -1,0 +1,29 @@
+{
+  "name": "grasa",
+  "version": "1.0.0",
+  "description": "Portal de Transparência Social com upload de PDFs e MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "security:rotate-admin": "node scripts/rotate-admin-password.js",
+    "security:initialize-env": "node scripts/initialize-secure-env.js",
+    "security:least-privilege-db": "node scripts/create-app-db-user.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mysql-session": "^3.0.3",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "multer": "^2.4.0",
+    "mysql2": "^3.24.6",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0"
+  },
+  "overrides": {
+    "mysql2": "^3.24.6"
+  }
+}

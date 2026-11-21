@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+.admin-password-reset
+node_modules/
+npm-debug.log*
+uploads/*
+!uploads/.gitkeep
